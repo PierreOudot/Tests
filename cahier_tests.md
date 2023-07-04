@@ -8,7 +8,7 @@ deviner un mot, à chaque erreur le processus de pendaison avance. Passé n erre
 
 ### Classe de test 1 :  Mise en place de la partie
 
-nom: Test_Class_StarNewGame
+nom: Test_Class_StartNewGame
 
 Conditions de mise en place : 
     
@@ -64,7 +64,7 @@ Etapes de test :
     - verifier que compareInputToCharArray("t") renvoit true.
 Résultat attendu : le test passe si compareInputToCharArray renvoit true
 
-#### test 2 
+#### test 2
 
 nom : input_length_1_should_not_match_a_char_present_in_objectToGuess.wordToGuess
 id : 2b 
@@ -78,7 +78,11 @@ Résultat attendu : le test passe si compareInputToCharArray renvoit false
 nom : input_toto_should_match_wordToGuess
 id : 3b
 Objectif : tester la fonction de comparaison en cas d'input > 1
-Etapes de test : increaseFailCounter
+Etapes de test : 
+    - 
+
+#### test 
+
 nom : input_tutu_should_not_match_wordToGuess
 id : 4b
 Objectif : tester la fonction de comparaison en cas d'input > 1
@@ -246,10 +250,10 @@ Etapes de test :
     - restore gameOver == false
 Résultat attendu : le test passe si la variable == ce qui est attendu
 
-#### test 4
+#### test 5
 
 nom : setGameBoard_should_return_appropriate_game_board_if_goodGame
-id : 4d
+id : 5d
 Objectif : tester la concatenation du dessin de la pendaison avec la patterne du mot à deviner
 Etapes de test :
     - set goodGame == true
