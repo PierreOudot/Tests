@@ -28,7 +28,7 @@ export function setWordToCharArray(){
     console.log(word);
     let wordArray = [...word]
     console.log(wordArray);
-    gameVariables.wordToGuessCharArray = wordArray;
+    
     return wordArray;
    
     
