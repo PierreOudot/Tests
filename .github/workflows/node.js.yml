@@ -29,6 +29,6 @@ jobs:
     #- run: npm run build --if-present
     - name: execute tests
     - run: npm ci
-    - run: npm run test:unit
+    - run: npm run test
     
     
