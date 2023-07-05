@@ -4,7 +4,7 @@ export default defineConfig({
   test: {
     include: ['tests/*'],
     coverage: {
-      provider: 'istanbul'
+      provider: 'v8'
   },
 }
 })
