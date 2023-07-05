@@ -28,7 +28,8 @@ jobs:
         cache: 'npm'
     #- run: npm run build --if-present
     - name: execute tests
-    - run: npm ci
-    - run: npm run test
+    - run: |
+        npm ci
+        run: npm run test
     
     
