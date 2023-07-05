@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, test, vi } from 'vitest';
-import {generateIndex, setObjectToGuess, setWordToCharArray} from 'src/gameBaseElements.js';
+import {generateIndex, setObjectToGuess, wordToCharArray} from 'src/gameBaseElements.js';
 import * as exports from 'src/gameVariables.js';
 import { gameVariables } from 'src/gameVariables.js';
 
@@ -57,7 +57,7 @@ describe('when objectToGuess.wordToGuess is toto', () => {
     });
 
     it("objectToGuess.wordToGuess_should_be_splited_into_char_array_of_length_4",() =>{
-    let mockWordToChar = setWordToCharArray();
+    let mockWordToChar = wordToCharArray();
     console.log(mockWordToChar);
     expect(mockWordToChar).toBeInstanceOf(Array);
     expect(mockWordToChar.length).toEqual(4);

@@ -21,13 +21,9 @@ export function setObjectToGuess(){
  * @param {string} wordToGuess
  * @returns {Array}
  */
-export function setWordToCharArray(){
-    console.log(gameVariables.objectToGuess());
-    console.log(gameVariables.objectToGuess().wordToGuess);
+export function wordToCharArray(){
     let word = gameVariables.objectToGuess().wordToGuess;
-    console.log(word);
     let wordArray = [...word]
-    console.log(wordArray);
     
     return wordArray;
    
