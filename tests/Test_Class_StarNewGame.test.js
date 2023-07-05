@@ -58,7 +58,6 @@ describe('when objectToGuess.wordToGuess is toto', () => {
 
     it("objectToGuess.wordToGuess_should_be_splited_into_char_array_of_length_4",() =>{
     let mockWordToChar = wordToCharArray();
-    console.log(mockWordToChar);
     expect(mockWordToChar).toBeInstanceOf(Array);
     expect(mockWordToChar.length).toEqual(4);
     });
