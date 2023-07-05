@@ -4,9 +4,9 @@ import * as exports from 'src/gameVariables.js';
 import { gameVariables } from 'src/gameVariables.js';
 
 
-const spy = vi.spyOn(Math,'random'); // attention marche pas si fonction à tester ds import normal + import as exports (pour func maison spyOn ne marche qu'avec exports) ->Math.random au lieu de mock le retour de generateIndex
-const spy2 = vi.spyOn(gameVariables, 'guessPool');
-const spy3 = vi.spyOn(gameVariables, 'objectToGuess');
+const spy = vi.spyOn(Math,'random'); // attention marche pas toujours pour func maison  ->Math.random au lieu de mock le retour de generateIndex
+const spy2 = vi.spyOn(gameVariables, 'getGuessPool');
+const spy3 = vi.spyOn(gameVariables, 'getObjectToGuess');
 
 
 let mockObjectToGuess = null;
@@ -27,8 +27,6 @@ describe('when max guessPoolLength if 2', () => {
     expect(index).toBeLessThan(2);
     });
 });
-
-
 
 describe('when genereateIndex returns 0', () => {
     beforeEach(() => {
@@ -63,4 +61,4 @@ describe('when objectToGuess.wordToGuess is toto', () => {
     });
 });
           
-          
+           

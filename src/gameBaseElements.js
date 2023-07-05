@@ -5,7 +5,7 @@ import {gameVariables} from 'src/gameVariables.js';
  * @returns {int}
  */
 export function generateIndex() {
-    let arrayLength = gameVariables.guessPool().length;
+    let arrayLength = gameVariables.getGuessPool().length;
     return Math.floor(Math.random()*arrayLength);
 }
 
@@ -14,7 +14,7 @@ export function generateIndex() {
 */
 export function setObjectToGuess(){
     let index = generateIndex();
-    return gameVariables.guessPool()[index];
+    return gameVariables.getGuessPool()[index];
 }
 
 /**
@@ -22,12 +22,8 @@ export function setObjectToGuess(){
  * @returns {Array}
  */
 export function wordToCharArray(){
-    let word = gameVariables.objectToGuess().wordToGuess;
-    let wordArray = [...word]
-    
-    return wordArray;
-   
-    
+    let word = gameVariables.getObjectToGuess().wordToGuess;
+    return gameVariables.wordToGuessCharArray = [...word];
 }
 
  
