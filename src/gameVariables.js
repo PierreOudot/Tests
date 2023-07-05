@@ -12,44 +12,15 @@ export const gameVariables = {
     /**
     * @returns {object[]}
     */
-    get guessPool(){
+    getGuessPool(){
         return this.guessPool;
     },
 
     /**
     * @returns {object}
     */
-    get objectToGuess(){
+    getObjectToGuess(){
         return this.objectToGuess;
-    },
-
-    /**
-    * @returns {string[]}
-    */
-    get wordToGuessCharArray(){
-        return this.wordToGuessCharArray;
-    },
-
-    /**
-    * @param {object[]} objectArray
-    */
-    set guessPool(objectArray){
-        this.guessPool = objectArray;
-    },
-    
-    /**
-    * @param {object} object
-    */
-    set objectToGuess(object){
-        this.objectToGuess = object;
-    },
-
-    /**
-    * @param {string[]} stringArray
-    */
-    set wordToGuessCharArray(stringArray){
-        this.wordToGuessCharArray.splice(
-            0, this.wordToGuessCharArray.length, stringArray);
     },
 }
 
