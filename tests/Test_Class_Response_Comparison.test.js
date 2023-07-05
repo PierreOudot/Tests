@@ -1,5 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, test, vi } from 'vitest';
 import {compareInputCharToCharArray, setObjectToGuess, wordToCharArray} from 'src/responseHandler.js';
+import * as exports from 'src/gameVariables.js';
 
 const mockObjectToGuess = {wordToGuess: "toto", question: "question", clue: "clue"};
 const mockWordToGuessCharArray = ["t","o","t","o"];

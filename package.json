@@ -1,12 +1,1 @@
-{"type":  "module",
-  "devDependencies": {
-    "vitest": "^0.32.4"
-  },
-  "dependencies": {
-    "prompts": "^2.4.2"
-  },
-  "scripts": {
-    "test": "vitest"
-  }
-
-}
+{"type":"module","devDependencies":{"@vitest/coverage-istanbul":"^0.32.4","@vitest/ui":"^0.32.4","vitest":"^0.32.4"},"dependencies":{"prompts":"^2.4.2"},"scripts":{"testUi":"vitest --ui","test":"vitest ","coverage":"vitest run --coverage"}}

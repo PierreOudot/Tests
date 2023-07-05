@@ -1,20 +1,37 @@
-import {guessPool, objectToGuess, wordToGuessCharArray} from 'src/gameVariables.js';
+import {gameVariables} from 'src/gameVariables.js';
 
+/**
+ * 
+ * @returns {int}
+ */
 export function generateIndex() {
-    let arrayLength = guessPool.length;
+    let arrayLength = gameVariables.guessPool().length;
     return Math.floor(Math.random()*arrayLength);
 }
 
+/**
+* @returns {object}
+*/
 export function setObjectToGuess(){
     let index = generateIndex();
-    return guessPool[index];
+    return gameVariables.guessPool()[index];
 }
 
 /**
  * @param {string} wordToGuess
  * @returns {Array}
  */
-export function wordToCharArray(wordToGuess){
-    return [...wordToGuess];
+export function setWordToCharArray(){
+    console.log(gameVariables.objectToGuess());
+    console.log(gameVariables.objectToGuess().wordToGuess);
+    let word = gameVariables.objectToGuess().wordToGuess;
+    console.log(word);
+    let wordArray = [...word]
+    console.log(wordArray);
+    gameVariables.wordToGuessCharArray = wordArray;
+    return wordArray;
+   
+    
 }
 
+ 
